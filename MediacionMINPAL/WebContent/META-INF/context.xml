@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context antiResourceLocking="false" privileged="true" >
+  <!--
+    Restriccion de acceso al servicio solo a la ip del administrador y a la ip de mule 
+  -->
+  <!--Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.0\.0\.1|127\.0\.0\.1" denyStatus="404"/-->
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.0\.0\.1|192\.168\.9\.114" denyStatus="404"/>
+
+</Context>
